@@ -45,7 +45,7 @@ void loginUser();
 void loginAdmin();
 void transferMoney(int i);
 
-//tai khoan: anhaidung2006
+//tai khoan: anhaidung
 //mat khau: 06072006
 
 int main() {
@@ -699,10 +699,10 @@ void loginUser(){
 	char userAccount[20], userPassword[20];
 	int i;
     int count=0;
-    printf("     account: ");
+    printf("     account(id): ");
     fgets(userAccount, sizeof(userAccount), stdin);
     userAccount[strcspn(userAccount, "\n")] = '\0';
-    printf("     password: ");
+    printf("     password(sdt): ");
     fgets(userPassword, sizeof(userPassword), stdin);
     userPassword[strcspn(userPassword, "\n")] = '\0';
     for( i=0; i<numberUser; i++){
